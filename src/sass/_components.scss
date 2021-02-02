@@ -1,0 +1,354 @@
+/*
+* @Author: JawariaWaseem
+* @Date:   2021-01-23 19:58:14
+* @Last Modified by:   JawariaWaseem
+* @Last Modified time: 2021-01-27 21:09:32
+*/
+.nav{
+	&__icons{
+		margin-bottom: 2rem;
+		display: flex;
+		justify-content: space-between;
+
+		&-btn{
+			color: $color-grey-dark;
+			font-size: 2rem;
+			cursor: pointer;
+			text-decoration: none;
+		}
+
+		&-img{
+			width: 5rem;
+		}
+	}
+
+	&__list{
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid $color-grey-primary;
+
+		&-item{
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: 1.6rem;
+			font-weight: bold;
+			padding: 0 1rem;
+			border-bottom: 2px solid transparent;
+			transition: all 0.2s;
+
+			&:hover{
+				border-bottom: 2px solid $color-blue;
+			}
+		}
+	}
+}
+
+//////// categories
+
+.categories{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-row-gap: 2rem;
+	grid-column-gap: 2rem;
+	margin-top: 6rem;
+
+	&__name{
+		font-size: 1.6rem;
+		font-weight: bold;
+		text-decoration: none;
+		color: $color-black;
+		margin-top: 3rem;
+	}
+
+	&__box{
+		box-shadow: $shadow-light;
+		border-radius: 0.4rem;
+		padding: 2rem;
+		&--1{
+			border-top: 2px solid $color-blue;
+		}
+		&--2{
+			border-top: 2px solid $color-orange;
+		}
+		&--3{
+			border-top: 2px solid $color-green-light;
+		}
+		&--4{
+			border-top: 2px solid $color-purple;
+		}
+	}
+
+	&__icon{
+		width: 3rem;
+		height: 3rem;
+		margin-bottom: 3rem; 
+
+		&--1{
+			fill: $color-blue;
+		}
+		&--2{
+			fill: $color-orange;
+		}
+		&--3{
+			fill: $color-green-light;
+		}
+		&--4{
+			fill: $color-purple;
+		}
+	}
+}
+
+/////// add btn ////////
+.btn{
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__add{
+
+		text-decoration: none;
+		color: $color-white;
+		box-shadow: $shadow-light;
+		transition: all 0.2s;
+
+		&--green{
+			background-color: $color-green-light;
+			padding: 2rem 3rem;
+			font-size: 3rem;
+			border-radius: 1rem;
+
+			&:hover{
+				background-color: $color-green;
+			}
+		}
+
+		&--blue{
+			background-color: $color-blue;
+			padding: 0.5rem 0.9rem;
+			font-size: 2rem;
+			border-radius: 0.5rem;
+
+			&:hover{
+				background-color: $color-blue-light;
+			}
+		}
+
+		
+	}
+
+	// &__main{
+	// 	text-transform: uppercase;
+	// 	font-size: 1.6rem;
+	// 	width: 100%;
+	// 	border: none;
+	// 	background-color: $color-white;
+	// 	padding: 3rem;
+	// 	box-shadow: 0 -8px 8px -4px rgba(0,0,0,.05);
+	// 	position: relative;
+	// 	transition: all 0.2s;
+
+	// 	span{
+	// 		font-size: 3rem;
+	// 		position: absolute;
+	// 		top: 50%;
+	// 		left: 35%;
+	// 		transform: translate(-50%,-50%);
+	// 		margin-right: 3rem;
+	// 	}
+	// 	&:hover{
+	// 		background-color: $color-purple;
+	// 		color: $color-white;
+	// 	}
+	// 	&:focus{
+	// 		outline: none;
+	// 	}
+	// }
+
+	&__main{
+
+		text-decoration: none;
+		box-shadow: 0 -8px 8px -4px rgba(0,0,0,.05);
+		position: absolute;
+		font-size: 3rem;
+		text-transform: uppercase;
+		width: 99%;
+		text-align: center;
+		transition: all 0.2s;
+		border: none;
+		background-color: $color-white;
+
+		span{
+			font-size: 1.6rem;
+			margin-left: 2rem;
+		}
+
+		&:hover{
+			background-color: $color-purple;
+			color: $color-white;
+		}
+		&:focus{
+			outline: none;
+		}
+	}
+
+}
+
+/////// form/////////
+
+.form{
+	&__input{
+		width: 100%;
+		border: none;
+		font-size: 1.6rem;
+		border-bottom: 1px solid $color-grey-primary;
+		line-height: 2;
+
+		&:focus{
+			outline: none;
+			color: $color-grey-dark;
+		}
+	}
+	&__group{
+		padding: 2rem 0;
+		position: relative;
+	}
+
+	&__radio-group{
+		margin: 4rem 0;
+	}
+
+	&__radio-input{
+		display: none;
+	}
+
+	&__radio-label{
+		font-size: 1.6rem;
+		font-weight: bold;
+		color: #333333;
+		margin-left: 4.5rem;
+		position: relative;
+	}
+
+	&__radio-button{
+		width: 2.5rem;
+		height: 2.5rem;
+		border: 0.2rem solid $color-purple;
+		border-radius: 50%;
+		display: inline-block;
+		position: absolute;
+		top: -0.5rem;
+		left: -5rem;
+		cursor: pointer;
+
+		&::after{
+			content: block;
+			content: "";
+			position: absolute;
+			background-color: $color-purple;
+			border-radius: 50%;
+			width: 1.5rem;
+			height: 1.5rem;
+			top: 0.3rem;
+			left: 0.3rem;
+			opacity: 0;
+			transition: opacity 0.2s;
+		}
+	}
+	&__radio-input:checked + &__radio-label &__radio-button::after{
+		opacity: 1;
+	}
+
+	&__checkbox-input{
+		display: none;
+	}
+
+	&__checkbox-label{
+		cursor: pointer;
+		padding-left: 6rem;
+		position: relative;
+		transition: all 0.2s;
+	}
+	&__checkbox-button{
+		width: 3rem;
+		height: 3rem;
+		display: inline-block;
+		border: 0.1rem solid $color-blue;
+		border-radius: 0.5rem;
+		position: absolute;
+		top: -21.45%;
+		left: 0;
+
+		&::after{
+			content:"";
+			display: block;
+			height: 1.8rem;
+			width: 1.8rem;
+			position: absolute;
+			top: 30%;
+			left: 40%;
+			transform: translate(-50%,-50%) rotate(-50deg);
+			background-color: $color-blue;
+			// -webkit-clip-path: polygon(21% 78%, 100% 18%, 64% 57%, 43% 76%, 15% 100%, 9% 82%, 0 57%, 10% 51%);
+			-webkit-clip-path: polygon(21% 35%, 21% 78%, 100% 78%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0 35%);
+			opacity: 0;
+			transition: opacity 0.2s;
+		}
+	}
+	&__checkbox-input:checked + &__checkbox-label &__checkbox-button::after{
+		opacity: 1;
+	}
+	&__checkbox-input:checked + &__checkbox-label{
+		text-decoration: line-through;
+		color: $color-grey-dark;
+	}
+}
+
+//////////todo/////////
+.todo{
+
+	&__icon{
+		width: 3rem;
+		height: 3rem;
+		fill: $color-blue;
+		margin-right: 2rem;
+	}
+
+	&__heading{
+		display: flex;
+		flex-wrap: wrap;
+
+		h3{
+			flex-basis: 100%;
+			margin-left: 5rem;
+		}
+	}
+
+	&__list{
+		list-style: none;
+	}
+
+	&__box{
+		padding: 3rem 0;
+	}
+
+	&__group{
+	}
+
+	&__items{
+		padding: 2rem 0;
+		border-bottom: 1px solid $color-grey-primary;
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+
+	&__btn{
+		padding: 2rem 0;
+		&-text{
+			font-size: 1.6rem;
+			color: $color-grey-dark;
+			padding-left: 3rem;
+		}
+	}
+}

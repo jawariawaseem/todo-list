@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i, 600" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+	<title>To &mdash; Do list</title>
+</head>
+<body>
+	<div class="container">
+
+		<nav class="nav">
+			<div class="nav__icons">
+				<a class="nav__icons-btn">&larr;</a>	
+				<img src="logo.svg" class="nav__icons-img">
+			</div>
+		</nav>
+		<h1 class="heading__primary u-margin-bottom-medium">Hey Jawaria, <span class="heading__primary--sub">this your to-do list.</span></h1>
+		<ul class="nav__list">
+			<li class="nav__list-item">Today</li>
+			<li class="nav__list-item">Week</li>
+			<li class="nav__list-item">Month</li>
+		</ul>
+		<section  class="categories">
+			<div class="categories__box categories__box--1">
+				<svg class="categories__icon categories__icon--1">
+					<use xlink:href="img/symbol-defs.svg#icon-school"></use>
+				</svg>
+				<h2 class="heading__secondary"><a class="heading__link" href="#">School</a></h2>
+				<h2 class="heading__tertiary">7 form</h2>
+			</div>
+			<div class="categories__box categories__box--2">
+				<svg class="categories__icon categories__icon--2">
+					<use xlink:href="img/symbol-defs.svg#icon-suitcase"></use>
+				</svg>
+				<h2 class="heading__secondary"><a class="heading__link" href="#">Work</a></h2>
+				<h2 class="heading__tertiary">4 tasks</h2>
+			</div>
+			<div class="categories__box categories__box--3">
+				<svg class="categories__icon categories__icon--3">
+					<use xlink:href="img/symbol-defs.svg#icon-trophy"></use>
+				</svg>
+				<h2 class="heading__secondary"><a class="heading__link" href="#">Sport</a></h2>
+				<h2 class="heading__tertiary">2 tasks</h2>
+			</div>
+			<div class="categories__box categories__box--4">
+				<svg class="categories__icon categories__icon--4">
+					<use xlink:href="img/symbol-defs.svg#icon-home"></use>
+				</svg>
+				<h2 class="heading__secondary"><a class="heading__link" href="#">Home</a></h2>
+				<h2 class="heading__tertiary">11 tasks</h2>
+			</div>
+		</section>
+		<section class="u-margin-top-small">
+			<a href="#" class="btn__add btn__add--green">+</a>
+		</section>
+	</div>
+	<div class="container">
+
+		<h1 class="heading__primary">Add new task</h1>
+		<section class="tasks">
+			<form accept="#" class="form">
+				<div class="form__group">
+					<input type="text" name="title" class="form__input" placeholder="Title" />
+				</div>
+				<div class="form__group">
+					<input type="text" name="description" class="form__input" placeholder="Description" />
+				</div>
+				<div class="form__group">
+					<div class="form__radio-group">
+						<input type="radio" id="school" name="category" class="form__radio-input" />
+						<label for="school" class="form__radio-label">
+							<span class="form__radio-button"></span>
+						School</label>
+					</div>
+					<div class="form__radio-group">
+						<input type="radio" id="home" name="category" class="form__radio-input" />
+						<label for="home" class="form__radio-label">
+							<span class="form__radio-button"></span>
+						Home</label>
+					</div>
+					<div class="form__radio-group">
+						<input type="radio" id="sport" name="category" class="form__radio-input" />
+						<label for="sport" class="form__radio-label">
+							<span class="form__radio-button"></span>
+						Sport</label>
+					</div>
+					<div class="form__radio-group">
+						<input type="radio" id="work" name="category" class="form__radio-input" />
+						<label for="work" class="form__radio-label">
+							<span class="form__radio-button"></span>
+						Work</label>
+					</div>
+				</div>
+				<div class="form__group">
+					<a href="#" class="btn btn__main"> + <span>Add Task</span></a>
+				</div>
+			</form>
+		</section>
+	</div>
+	<div class="container">
+		<section class="todo">
+			<div class="todo__heading ">
+				<svg class="todo__icon">
+					<use xlink:href="img/symbol-defs.svg#icon-school"></use>
+				</svg>
+				<h1 class="heading__primary">
+					School
+				</h1>
+
+				<h3 class="heading__tertiary--2 u-margin-bottom-small">8 Tasks</h3>
+			</div>
+			<ul class="todo__list">
+				<div class="todo__box">
+					<h3 class="heading__tertiary--2">Today</h3>
+					<div class="todo__group">
+						<li class="todo__items">
+							<input type="checkbox" name="todo_task-1" id="todo_task-1" class="form__checkbox-input" />
+							<label for="todo_task-1" class="form__checkbox-label"><span class="form__checkbox-button"></span>Do the exercise of math</label>
+						</li>
+					</div>
+					<div class="todo__group">
+						<li class="todo__items">
+							<input type="checkbox" name="todo_task-2" id="todo_task-2" class="form__checkbox-input" />
+							<label for="todo_task-2" class="form__checkbox-label"><span class="form__checkbox-button"></span>Check the homework</label>
+						</li>
+					</div>
+					<div class="todo__group">
+						<li class="todo__items">
+							<input type="checkbox" name="todo_task-3" id="todo_task-3" class="form__checkbox-input" />
+							<label for="todo_task-3" class="form__checkbox-label"><span class="form__checkbox-button"></span>Repeat the poetry of Pascoli</label>
+						</li>
+					</div>		
+				</div>
+				<div class="todo__box">
+					<h3 class="heading__tertiary--2">Tomorrow</h3>
+					<div class="todo__group">
+						<li class="todo__items">
+							<input type="checkbox" name="todo_task-4" id="todo_task-4" class="form__checkbox-input" />
+							<label for="todo_task-4" class="form__checkbox-label"><span class="form__checkbox-button"></span>Study math</label>
+						</li>
+					</div>
+					<div class="todo__group">
+						<li class="todo__items">
+							<input type="checkbox" name="todo_task-4" id="todo_task-5" class="form__checkbox-input" />
+							<label for="todo_task-5" class="form__checkbox-label"><span class="form__checkbox-button"></span>Do the exercise of story</label>
+						</li>
+					</div>
+					<div class="todo__group">
+						<li class="todo__items">
+							<input type="checkbox" name="todo_task-5" id="todo_task-6" class="form__checkbox-input" />
+							<label for="todo_task-6" class="form__checkbox-label"><span class="form__checkbox-button"></span>Check the homework</label>
+						</li>
+					</div>		
+				</div>
+			</ul>
+			<div class="todo__btn">
+				<a href="#" class="btn__add btn__add--blue">+</a><span class="todo__btn-text">Add new task</span>
+			</div>
+		</section>
+	</div>
+	<div class="container">
+
+		<h1 class="heading__primary">Add new category</h1>
+		<section class="tasks">
+			<form accept="#" class="form">
+				<div class="form__group">
+					<input type="text" name="title" class="form__input" placeholder="Title" />
+				</div>
+				<div class="form__group">
+					<a href="#" class="btn btn__main"> + <span>Add Task</span></a>
+				</div>
+			</form>
+		</section>
+	</div>
+</body>
+</html>

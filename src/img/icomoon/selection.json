@@ -1,0 +1,141 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M512 128l470 256v342h-86v-296l-384 210-470-256zM214 562l298 164 298-164v172l-298 162-298-162v-172z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "school"
+        ],
+        "grid": 24
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 1,
+        "id": 0,
+        "name": "school",
+        "prevSize": 24
+      },
+      "setIdx": 0,
+      "setId": 3,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M956.006 563.2h-85.606v307.2c0 22.784-9.933 51.2-51.2 51.2h-204.8v-307.2h-204.8v307.2h-204.8c-41.267 0-51.2-28.416-51.2-51.2v-307.2h-85.606c-30.618 0-24.064-16.589-3.072-38.298l410.829-411.238c9.984-10.342 23.091-15.462 36.25-15.974 13.158 0.512 26.266 5.581 36.25 15.974l410.778 411.187c21.043 21.76 27.597 38.349-3.021 38.349z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "home"
+        ],
+        "grid": 20
+      },
+      "attrs": [],
+      "properties": {
+        "id": 185,
+        "order": 12,
+        "prevSize": 20,
+        "name": "home"
+      },
+      "setIdx": 1,
+      "setId": 2,
+      "iconIdx": 184
+    },
+    {
+      "icon": {
+        "paths": [
+          "M921.6 204.8h-51.2v768h51.2c56.32 0 102.4-46.080 102.4-102.4v-563.2c0-56.32-46.080-102.4-102.4-102.4zM0 307.2v563.2c0 56.32 46.029 102.4 102.4 102.4h51.2v-768h-51.2c-56.371 0-102.4 46.080-102.4 102.4zM691.2 97.587c-34.867-16.179-96.717-46.387-180.173-46.387-83.61 0-143.36 30.208-178.227 46.387v107.213h-128v768h614.4v-768h-128v-107.213zM614.4 204.8h-204.8v-68.403c27.341-11.776 55.194-23.808 101.427-23.808 46.182 0 76.083 11.981 103.373 23.808v68.403z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "suitcase"
+        ],
+        "grid": 20
+      },
+      "attrs": [],
+      "properties": {
+        "id": 288,
+        "order": 15,
+        "prevSize": 20,
+        "name": "suitcase"
+      },
+      "setIdx": 1,
+      "setId": 2,
+      "iconIdx": 287
+    },
+    {
+      "icon": {
+        "paths": [
+          "M832 192v-128h-640v128h-192v128c0 106.038 85.958 192 192 192 20.076 0 39.43-3.086 57.62-8.802 46.174 66.008 116.608 113.796 198.38 130.396v198.406h-64c-70.694 0-128 57.306-128 128h512c0-70.694-57.306-128-128-128h-64v-198.406c81.772-16.6 152.206-64.386 198.38-130.396 18.19 5.716 37.544 8.802 57.62 8.802 106.042 0 192-85.962 192-192v-128h-192zM192 436c-63.962 0-116-52.038-116-116v-64h116v64c0 40.186 7.43 78.632 20.954 114.068-6.802 1.246-13.798 1.932-20.954 1.932zM948 320c0 63.962-52.038 116-116 116-7.156 0-14.152-0.686-20.954-1.932 13.524-35.436 20.954-73.882 20.954-114.068v-64h116v64z"
+        ],
+        "tags": [
+          "trophy",
+          "cup",
+          "prize",
+          "award",
+          "winner",
+          "tournament"
+        ],
+        "defaultCode": 59806,
+        "grid": 16,
+        "attrs": []
+      },
+      "attrs": [],
+      "properties": {
+        "ligatures": "trophy, cup",
+        "name": "trophy",
+        "order": 14,
+        "id": 159,
+        "prevSize": 32
+      },
+      "setIdx": 2,
+      "setId": 1,
+      "iconIdx": 158
+    }
+  ],
+  "height": 1024,
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon"
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon",
+      "name": "icomoon"
+    },
+    "historySize": 50,
+    "showCodes": true,
+    "gridSize": 16
+  }
+}

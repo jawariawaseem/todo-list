@@ -1,0 +1,69 @@
+/*
+* @Author: JawariaWaseem
+* @Date:   2021-01-18 23:18:16
+* @Last Modified by:   JawariaWaseem
+* @Last Modified time: 2021-01-23 01:31:55
+*/
+import React, { useState, useEffect } from "react";
+import { connect } from "react-redux";
+import { getTasks, updateTask } from "../actions/index";
+import { Link, useParams } from 'react-router-dom';
+
+const mapStateToProps = (state) => {
+		return{ tasks : state.filteredTasks };
+}
+// const mapDispatchToProps = (dispatch) => {
+// 	return {
+// 		getTasks: text_type => dispatch(getTasks(text_type)),
+// 		updateTask: payload => dispatch(updateTask(payload))
+// 	}
+// }
+
+const mapDispatchToProps = dispatch => {
+  return {
+    	getTasks: text_type => dispatch(getTasks(text_type)),
+		updateTask: payload => dispatch(updateTask(payload))
+	}
+}
+
+
+const ListData = ({tasks, getTasks, updateTask}) => {
+	const {category} = useParams();
+	const [ checked, setChecked ] = useState(false);
+
+	useEffect(() =>{
+		getTasks(category);
+	},[checked]);
+
+	const handleChange = (id,e) => {
+		setChecked(e.target.value);
+		updateTask({id: id, is_completed: !checked});	
+		setChecked(!checked);
+		console.log(checked);
+	}
+
+	return(
+		<div>
+			<ul>
+				{
+					tasks.map(task => {
+						return(
+							<li key={task.id}>
+								<a href="#">{task.title}</a>
+								<p>{task.description}</p>
+								<p>{task.date}</p>
+								<input type="checkbox" onChange={(e) => handleChange(task.id,e)} checked={task.is_completed}/>
+							</li>
+						)
+					})
+				}		
+			</ul>
+			<Link to="/addtask">
+			    Add Task
+			</Link>
+		</div>
+	);
+}
+
+const List = connect(mapStateToProps,mapDispatchToProps)(ListData);
+export default List;

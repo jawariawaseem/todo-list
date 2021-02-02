@@ -1,0 +1,52 @@
+/*
+* @Author: JawariaWaseem
+* @Date:   2021-01-23 19:58:14
+* @Last Modified by:   JawariaWaseem
+* @Last Modified time: 2021-01-27 21:15:24
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+
+html{
+	box-sizing: border-box; 
+	font-size: 62.5%; //1rem = 10px  10px/16px=62.5
+}
+body{
+	font-family: 'Open Sans',sans-serif;
+	font-weight: 400;
+	line-height: 1.6;
+	background-color: $color-grey-primary;
+}
+
+.u-margin-bottom-small{
+	margin-bottom: 1.5rem !important; 
+}
+.u-margin-bottom-medium{
+	margin-bottom: 4rem !important;
+
+}
+.u-margin-bottom-big{
+	margin-bottom: 8rem !important;
+}
+
+.u-margin-top-small{
+	margin-top: 1rem !important;
+}
+
+.u-margin-top-small{
+	margin-top: 5rem !important;
+}
+.u-margin-top-big{
+	margin-top: 8rem !important;
+}
+.u-margin-top-huge{
+	margin-top: 10rem !important;
+}

@@ -1,0 +1,61 @@
+/*
+* @Author: JawariaWaseem
+* @Date:   2021-01-23 19:58:14
+* @Last Modified by:   JawariaWaseem
+* @Last Modified time: 2021-01-27 21:27:15
+*/
+.container{
+	background-color: $color-white;
+	max-width: 45rem;
+	margin: 5rem auto;
+	height: 85vh;
+	// min-height: 85vh;
+	box-shadow: $shadow-light;
+	padding: 3rem;
+	border-radius: 1rem;
+	overflow-y: auto;
+}
+
+
+.container::-webkit-scrollbar {
+  width: 8px;       
+}
+
+.container::-webkit-scrollbar-thumb {
+    border-radius: 16px;
+    background-color: $color-blue;
+}
+
+
+.heading{
+	&__primary{
+		font-size: 2.5rem;
+		line-height: 1.5;
+
+		&--sub{
+			display: block;
+		}
+	}
+
+	&secondary{
+		font-size: 1.6rem;
+		line-height: 1.5;
+		text-decoration: none;
+	}
+
+	&__tertiary{
+		font-size: 1.2rem;
+		color: $color-grey-dark;
+
+		&--2{
+			font-size: 1.6rem;
+			color: $color-grey-dark;
+			font-weight: 400;
+		}
+	}
+
+	&__link{
+		text-decoration: none;
+		color: $color-black;
+	}
+}
